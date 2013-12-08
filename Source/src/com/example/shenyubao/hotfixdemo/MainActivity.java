@@ -23,6 +23,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import dalvik.system.DexClassLoader;
 
@@ -35,6 +36,7 @@ public class MainActivity extends Activity {
     
     private Button mToastButton = null;
     private Button mUpdateButton = null;
+    private TextView mTextResult = null;
     private ProgressDialog mProgressDialog = null;
     public LibraryInterface lib = null;
     
@@ -44,7 +46,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         mToastButton = (Button) findViewById(R.id.toast_button);
         mUpdateButton = (Button) findViewById(R.id.update_button);
-
+        mTextResult = (TextView) findViewById(R.id.txvResult);
+        
         lib = new LocalLibraryProvider();
         
         final File dexInternalStoragePath = new File(getDir("dex", Context.MODE_PRIVATE),SECONDARY_DEX_NAME);
@@ -53,7 +56,7 @@ public class MainActivity extends Activity {
         mToastButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				lib.showAwesomeToast(getApplicationContext());
+				lib.setText(mTextResult);
 			}
 		});
         

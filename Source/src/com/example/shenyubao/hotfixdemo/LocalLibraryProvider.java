@@ -1,14 +1,16 @@
 package com.example.shenyubao.hotfixdemo;
 
 import android.content.Context;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LocalLibraryProvider implements LibraryInterface{
-    public void showAwesomeToast(Context context) {
-        if (context == null) {
+    public void setText(TextView textview) {
+        if (textview == null) {
             return;
         }
-        Toast.makeText(context,"Now is old vip",Toast.LENGTH_LONG).show();
-
+        textview.setText("Now is vip V1.0");
+        textview.setVisibility(View.VISIBLE);
     }
 }
