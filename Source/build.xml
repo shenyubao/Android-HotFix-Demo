@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="secondary_dex_sample" default="help">
+    <property file="local.properties" />
+    <property file="ant.properties" />
+    <loadproperties srcFile="project.properties" />
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var"
+            unless="sdk.dir"
+    />
+    <macrodef name="dex-helper-mod">
+        <attribute name="input-dir" />
+        <attribute name="output-dex-file" />
+        <element name="external-libs" optional="yes" />
+        <element name="extra-parameters" optional="yes" />
+        <attribute name="nolocals" default="false" />
+        <sequential>
+            <if>
+                <condition>
+                    <isreference refid="out.dex.jar.input.ref" />
+                </condition>
+                <else>
+                    <path id="out.dex.jar.input.ref">
+                        <path refid="project.all.jars.path" />
+                    </path>
+                </else>
+            </if>
+
+            <echo>Converting compiled files and external libraries into @{output-dex-file}...</echo>
+            <dex executable="${dx}"
+                    output="@{output-dex-file}"
+                    nolocals="@{nolocals}"
+                    verbose="${verbose}">
+                <path path="@{input-dir}"/>
+                <path refid="out.dex.jar.input.ref" />
+                <external-libs />
+            </dex>
+        </sequential>
+    </macrodef>
+
+    <target name="-dex" depends="-compile, -post-compile, -obfuscate"
+            unless="do.not.compile">
+        <if condition="${manifest.hasCode}">
+            <then>
+                <mkdir dir="${out.classes.absolute.dir}.1"/>
+                <mkdir dir="${out.classes.absolute.dir}.2"/>
+
+                <copy todir="${out.classes.absolute.dir}.1" >
+                    <fileset dir="${out.classes.absolute.dir}" >
+                        <exclude name="com/example/shenyubao/hotfixdemo/lib/**" />
+                    </fileset>
+                </copy>
+                <copy todir="${out.classes.absolute.dir}.2" >
+                    <fileset dir="${out.classes.absolute.dir}" >
+                        <include name="com/example/shenyubao/hotfixdemo/lib/**" />
+                    </fileset>
+                </copy>
+
+                <dex-helper-mod input-dir="${out.classes.absolute.dir}.1"
+                    output-dex-file="${out.absolute.dir}/${dex.file.name}" />
+                <mkdir dir="${out.absolute.dir}/secondary_dex_dir" />
+                <dex-helper-mod input-dir="${out.classes.absolute.dir}.2"
+                    output-dex-file="${out.absolute.dir}/secondary_dex_dir/classes.dex" />
+
+                <jar destfile="${asset.absolute.dir}/vipv2.jar"
+                     basedir="${out.absolute.dir}/secondary_dex_dir" includes="classes.dex" />
+            </then>
+            <else>
+                <echo>hasCode = false. Skipping...</echo>
+            </else>
+        </if>
+    </target>
+
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HotfixDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="diag_title">Wait</string>
+    <string name="diag_message">Processing dex file</string>
+    <string name="message">Android Hotfix Demos.</string>
+    <string name="toast">显示版本</string>
+    <string name="update">更新</string>
+</resources>

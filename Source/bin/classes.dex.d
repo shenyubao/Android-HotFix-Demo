@@ -1,0 +1,19 @@
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.dex : \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/BuildConfig.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/LibraryInterface.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/LocalLibraryProvider.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/MainActivity$1.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/MainActivity$2.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/MainActivity$PrepareDexTask.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/MainActivity.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$attr.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$dimen.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$drawable.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$id.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$layout.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$menu.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$string.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R$style.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/R.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/com/example/shenyubao/hotfixdemo/StoragePool.class \
+/Projects/Android/Android-HotFix-Demo/Source/bin/classes.1/R.java.d \

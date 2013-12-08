@@ -1,0 +1,19 @@
+/Projects/Android/Android-HotFix-Demo/Source/gen/com/example/shenyubao/hotfixdemo/R.java \
+ : /Projects/Android/Android-HotFix-Demo/Source/res/drawable-hdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/res/drawable-mdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/res/drawable-xhdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/res/drawable-xxhdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/res/layout/activity_main.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/menu/main.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values/dimens.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values/strings.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values/styles.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values-sw600dp/dimens.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values-sw720dp-land/dimens.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values-v11/styles.xml \
+/Projects/Android/Android-HotFix-Demo/Source/res/values-v14/styles.xml \
+/Projects/Android/Android-HotFix-Demo/Source/bin/res/drawable-hdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/bin/res/drawable-mdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/bin/res/drawable-xhdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/bin/res/drawable-xxhdpi/ic_launcher.png \
+/Projects/Android/Android-HotFix-Demo/Source/bin/AndroidManifest.xml \
